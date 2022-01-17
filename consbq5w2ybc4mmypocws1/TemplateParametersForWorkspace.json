@@ -5,8 +5,14 @@
 		"workspaceName": {
 			"value": "consbq5w2ybc4mmypocws1"
 		},
+		"consbq5w2ybc4mmypocws1-WorkspaceDefaultSqlServer_connectionString": {
+			"value": ""
+		},
 		"TripFaresSynapseAnalyticsLinkedService_connectionString": {
 			"value": ""
+		},
+		"consbq5w2ybc4mmypocws1-WorkspaceDefaultStorage_properties_typeProperties_url": {
+			"value": "https://consbq5w2ybc4mmypoc.dfs.core.windows.net/"
 		},
 		"HttpServerTripDataLinkedService_properties_typeProperties_url": {
 			"value": "https://raw.githubusercontent.com/Azure/Test-Drive-Azure-Synapse-with-a-1-click-POC/main/tripDataAndFaresCSV/trip-data.csv"
@@ -14,11 +20,11 @@
 		"HttpServerTripFareDataLinkedService_properties_typeProperties_url": {
 			"value": "https://raw.githubusercontent.com/Azure/Test-Drive-Azure-Synapse-with-a-1-click-POC/main/tripDataAndFaresCSV/fares-data.csv"
 		},
-		"TripFaresDataLakeStorageLinkedService_properties_typeProperties_url": {
-			"value": "@{concat('https://',linkedService().datalakeAccountName,'.dfs.core.windows.net')}"
-		},
 		"keyVaultLinkedservice_properties_typeProperties_baseUrl": {
 			"value": "@{concat('https://',linkedService().keyVaultName,'.vault.azure.net/')}"
+		},
+		"TripFaresDataLakeStorageLinkedService_properties_typeProperties_url": {
+			"value": "@{concat('https://',linkedService().datalakeAccountName,'.dfs.core.windows.net')}"
 		}
 	}
 }
