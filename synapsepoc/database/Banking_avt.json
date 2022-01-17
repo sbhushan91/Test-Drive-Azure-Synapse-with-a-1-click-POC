@@ -1,0 +1,24 @@
+{
+	"name": "Banking_avt",
+	"properties": {
+		"Description": "",
+		"Name": "Banking_avt",
+		"EntityType": "DATABASE",
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"Properties": {
+			"DerivedModelDBInfo": "{\"ModelDirectives\":{\"BaseModel\":{\"Name\":\"Banking\",\"Version\":\"0.1.0\"}}}",
+			"IsSyMSCDMDatabase": true
+		},
+		"Source": {
+			"Provider": "ADLS",
+			"Location": "abfss://dlsconpocfs1@consbq5w2ybc4mmypoc.dfs.core.windows.net/Banking_avt",
+			"Properties": {
+				"FormatType": "csv",
+				"LinkedServiceName": "consbq5w2ybc4mmypocws1-WorkspaceDefaultStorage"
+			}
+		}
+	},
+	"type": "DATABASE"
+}
